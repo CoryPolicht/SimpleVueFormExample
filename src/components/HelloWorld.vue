@@ -34,7 +34,6 @@ export default {
       },
       dataSubmitObject: {
         data: ""
-
       }
     }
   },
@@ -42,6 +41,7 @@ export default {
     submitted() {
       let json = JSON.stringify(this.exampleBinding);
       this.dataSubmitObject = json;
+      // I would use axios to send data, It's widely used and well documented. 
       // axios.post("<URL>", this.dataSubmit);
     }
   },
