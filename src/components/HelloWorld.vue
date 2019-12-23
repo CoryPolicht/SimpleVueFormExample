@@ -27,6 +27,7 @@
 
 export default {
   name: "HelloWorld",
+  // this needs to be a function and contains just data for the page
   data () {
     return {
       exampleBinding: {
@@ -45,6 +46,7 @@ export default {
       // axios.post("<URL>", this.dataSubmit);
     }
   },
+  //this is the list of props that will be passed to the component
   props: {
     msg: String
   }
